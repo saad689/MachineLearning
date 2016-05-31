@@ -736,7 +736,7 @@ Ensure that you have executed the code block once you are done. You'll know the 
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> Cross validation is technique in which we take data and split it into a training set and a testing set. An estimator is trained utilizing the training set and then tested on the testing set. This process can be repeated several times on different splits of the data to characterize the performance of the estimator.</p>
-<p>Cross validation is especialy useful for grid search because it can be utilized to quantify the performance of the estimator for a given value or set of values of an estimator parameter. These results can be used to select a parameter value that will give us the most accurate estimator.</p>
+<p>Cross validation is especialy useful for grid search because it can be utilized to quantify the performance of the estimator for a given value or set of values of an estimator parameter. It allows the model to be tested on multiple testing data sets to keep the model from being biased to a very particular set of data. Utilizing cross validation also reveals the variance in the model from data set to data set which characterizes how well the model generalizes the data.</p>
 
 </div>
 </div>
@@ -2241,7 +2241,7 @@ tr0yEAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> From the graph above it appears that a maximum depth of 6 best generalizes the data. Increasing the max depth past this point overfits the model to the training set and does not buy any improved performance on the test set.</p>
+<p><strong>Answer: </strong> From the graph above it appears that a maximum depth of 6 best generalizes the data. Increasing the max depth past this point overfits the model to the training set and does not buy any improved performance on the test set. For values of 1 to 3, the testing and training error are quite high. It appears these values are not complex enough to make a resonable prediction. Between max depth values of 4 to 7, the testing and training errors have significantly decreased. In this range, it seems the model has generalized as much as it can as increases in the max depth past a value of 7 increase the testing error. The training error continues to decrease with a max depth value greater than 7 because the model is being overfit to the training data.</p>
 
 </div>
 </div>
